@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+*
+{
+	margin:0px;
+	padding:0px;
+}
+	
+div#back
+{
+	background-image:url(../pics/27.jpg);
+	background-size:cover;
+	height:1350px;
+	width:100%;
+	position:absolute;
+	
+}
+div#sub{
+	background-color:#000000;
+	height:85%;
+	
+	width:80%;
+	opacity:0.6;
+	margin:5%;
+	margin-left:10%;
+	
+	
+}
+div#regr{
+        padding:10%;
+		width:80%;
+		
+		height:80%;
+		
+		
+		
+	
+	
+}
+.blank
+{
+	height:40px;
+	margin:0px;
+	width:250px;
+}
+label
+{    
+    margin:4%;
+
+	width:92%;
+	display:block;
+	
+
+}
+span
+{   
+	
+
+	 color: #1CA7E1;
+	 width:15%;
+   font-size:28px;
+	height:40px;
+	display:inline-block;
+	
+
+	text-align:centre;
+
+}
+.button
+{
+	margin-top:10%;
+	margin-right:5%;
+	margin-left:5%;
+	display:inline;
+
+font-weight:bold;
+font-size:20px;
+	height :30px;
+	width:20%;
+	border-radius:5px;
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+
+}
+.button1
+{
+	margin-top:10%;
+	margin-right:5%;
+	margin-left:5%;
+font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+font-weight:bold;
+font-size:20px;
+	opacity:1;
+	
+	height :30px;
+	border-radius:5px;
+	width:20%;
+
+}
+.button:hover{
+	background:#F4A017;
+}
+.button1:hover{
+	background:#F4A017;
+}
+	
+#input
+{
+	display:inline;
+	color:#F02125;
+	width:15%;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:15px;
+}
+	
+#home{
+	margin:10px;
+	width:150px;
+}
+
+

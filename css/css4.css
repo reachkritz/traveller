@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+div#back{
+	background-image:url(46.jpg);
+	
+	height:800px;
+	width:1250px;
+	padding-left:100px;
+padding-bottom:100px;
+
+}
+div#pic{
+	background-image:url(47.jpg);
+	width:1050px;
+	height:600px;
+	padding-left:100px;
+	padding-top:100px;
+
+	/*border:50px;*/
+	position:absolute;
+}
+@keyframes rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  
+  
+  to { 
+   transform: rotateY(360deg);
+  }
+}
+
+div#img img
+{
+	animation-name:             rotate; 
+    animation-duration:         4s; 
+    animation-iteration-count:  infinite;
+    animation-timing-function: linear;
+}
+

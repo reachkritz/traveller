@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+<link rel="stylesheet" href="../css/css1.css">
+<script src="../js/home.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+
+</script>
+<script type="text/javascript">
+
+function Scroll(){
+var top = document.getElementById('bottom');
+var top2=document.getElementById('bottom2');
+var top3=document.getElementById('top');
+var top4=document.getElementById('icon');
+var ypos = window.pageYOffset;
+if(ypos > 450) {
+	top.style.opacity = "1";
+	top3.style.height="70px";
+	top4.style.height="70px";
+}
+else{
+	top.style.opacity = "0";
+	top3.style.height="100px";
+	top4.style.height="100px";
+	}
+if(ypos > 700 ){
+	top2.style.opacity = "1";
+}
+else{
+	top2.style.opacity = "0";
+}
+}
+	window.addEventListener("scroll",Scroll);
+
+	</script>
+</head>
+<body>
+<div id="back">
+<div id="top">
+<ul>
+<span style="color:#000000; font-size:30px; font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif; margin-left:15px; margin-top:15px;">
+<b><i>
+
+<img src="../pics/eiffelt.jpg" height="100px" id="icon"></i>
+</b>
+</span>
+<a href="#" class="link">
+<li id="flip">
+<span class="text">
+LOGIN
+</span>
+</li>
+</a>
+<a href="#developers" class="link">
+<li>
+<span class="text">
+DEVELOPERS
+</span>
+</li>
+</a>
+<a href="#bottom" class="link">
+<li>
+<span class="text">
+HOT DESTINATIONS
+</span>
+</li>
+</a>
+<a href="../html/register.html" class="link">
+<li>
+<span class="text">
+REGISTER
+</span>
+</li>
+</a>
+
+</ul>
+<div id="panel">
+<form action="../php/login.php" method="POST">
+<label>
+	 <input type="text" name="emailid" placeholder="EMAIL-ID" class="ph" id="emailid"/>
+    </label>
+    <label>
+	<input type="password" name="pwd" placeholder="PASSWORD" class="ph" id="pwd" />
+    </label>
+     
+   &nbsp;&nbsp;&nbsp; <input type="submit" value="LOGIN" id="btn" onClick="process(document.getElementById("emailid").value,document.getElementById("pwd")) name="btn"/>
+   
+</form>
+</div>
+</div>
+
+
+<img src="../pics/Awesome Mountain.jpeg" width="1350px" height="700px">
+<div id="bottom">
+<ul>
+<li>
+<div class="item">
+<a href="kerala.html" target="_blank"><img src="../pics/1.jpg" height="200px" width="370px" class="tr"><p class="imgdes">KERALA</p></a>
+
+</div>
+</li>
+<li>
+<div class="item">
+<a href="rajasthan.html" target="_blank"><img src="../pics/6.jpg" height="200px" width="370px" class="tr"><p class="imgdes">RAJASTHAN</p></a>
+</div>
+</li>
+<li>
+<div class="item">
+<a href="goa.html" target="_blank"><img src="../pics/18.jpg" height="200px" width="370px" class="tr"><p class="imgdes">GOA</p></a>
+</div>
+
+</li>
+</ul>
+</div>
+<div id="bottom2">
+<ul>
+<li>
+<div class="item">
+<a href="jammu.html" target="_blank"><img src="../pics/56.jpg" height="200px" width="370px" class="tr"><p class="imgdes">JAMMU & KASHMIR</p></a>
+</div>
+</li>
+<li>
+<div class="item">
+<a href="venice.html" target="_blank"><img src="../pics/27.jpg" height="200px" width="370px" class="tr"><p class="imgdes">VENICE</p></a>
+</div>
+</li>
+<li>
+<div class="item">
+<a href="switzerland.html" target="_blank"><img src="../pics/36.jpg" height="200px" width="370px" class="tr"><p class="imgdes">SWITZERLAND</p></a>
+</div>
+</li>
+</ul>
+<span id="input"></span>
+</div>
+
+</div><br>
+<div id="developers">This site has been created by team Slash_tags.</div>
+</body>
+</html>

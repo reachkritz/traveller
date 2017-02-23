@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../css/css3.css">
+
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/cycle2.js"></script>
+<script type="text/javascript">
+var ypos,image;
+	function parallex () {
+		ypos = window.pageYOffset;
+		image = document.getElementById('slideshow');
+		image.style.top = ypos * .8 +'px';
+	}
+	window.addEventListener('scroll',parallex);
+</script>
+<style type="text/css">
+#bottom {
+		background:#F17D0A;
+		z-index:1000;
+		height:700px;
+		position:relative;
+		width:100%;
+
+	}
+	</style>
+
+</head>
+<body>
+ 
+<div id="container">
+    <div id="slideshow" class="cycle-slideshow"
+       data-cycle-fx = "fade"
+       data-cycle-speed = "600"
+       data-cycle-timeout = "3000"
+       data-cycle-pager = "#pager"
+       data-cycle-pager-template ="<a href='#'><img src='{{src}}' height=100 width=150/>"
+       data-cycle-next = "#next"
+       data-cycle-prev = "#prev"
+       data-cycle-manual-fx = "scrollHorz"
+       data-cycle-manual-speed = "400"
+       data-cycle-pager-fx = "fade">
+        <img src="../pics/26.jpg" alt="">
+        <img src="../pics/31.jpg" alt="">
+        <img src="../pics/30.jpg" alt="">
+        <img src="../pics/17.jpg" alt="">
+    </div>
+    <div id="pager"></div>
+    <img id="prev" src="../pics/prev1.svg">
+    <img id="next" src="../pics/next1.svg">
+</div>
+ <div id="bottom">
+<div id="text">
+GOA<br><span class="text1">Go Goa!!</span>
+
+</div>
+<div id="caption">
+The long coastline of Kerala is inextricably entwined with the culture, life and traditions of the state. Memories of early seafarers 
+
+and traders have faded, but boats of various types and styles have survived. Kerala's beaches, or Kovalam to be more specific, were 
+
+rediscovered by back-packers and tan-seekers in the sixties
+Kerala , The Green Paradise! The lush greenery greets you everywhere. It doesn’t matter whether you are in city, suburban  or a rural 
+
+village, the green flora beckons you.
+The color green is the color of nature, fertility and of life.  It is the color of balance. It symbolizes harmony, well being and 
+
+growth.<br> It is said to be the color that relaxes and rejuvenates a person.
+Originated over 500 years ago, Kathakali is a spectacular classical dance form of Kerala. It is a combination of drama, dance, music 
+
+and ritual. Kathakali is one of the oldest theatre forms in the world. The word 'Katha' in Malayalam means Story and 'kali' means 
+
+Play. Thus Kathakali literally means 'Story-Play'.<br>
+Kerala is known as the "Land of Spices" because it traded spices with Europe 
+ Kerala cuisine offers a multitude of both vegetarian and non-vegetarian dishes prepared using fish, poultry and red meat with rice a 
+
+typical accompaniment. Chillies, curry leaves, mustard seeds, tamarind and asafoetida are all frequently used."
+The Oberoi Motor Vessel Vrinda, is docked at a private jetty on Vembanad Lake, at Pathiramanal, Kayyipuram, near Allepey. <br>The 
+
+distance from here to Cochin international airport is 82km, approximately two hours' drive.
+Entertainment 
+Guests can enjoy an exclusive on-board performance of the Mohinattam: "Dance of the Enchantress" and Kathakali dance, which 
+
+dramatises ancient stories from the Hindu epics: The Ramayana and The Mahabharata.
+</div>
+</div>
+</body>
+</html>

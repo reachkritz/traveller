@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Register</title>
+</head>
+<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script src="../js/api_js.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="../css/css2.css">
+<script src="../js/register.js"></script>
+
+<body>
+
+<div id="back">
+<a href="home.html" class="btn btn-info btn-lg" id="home"><span class="glyphicon glyphicon-home"  aria-hidden="true"></span>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home</a>
+<div id="sub">
+
+
+<form name="reg" id="reg" method="post" action="../php/register.php">
+
+<div id="regr">
+
+<label><span class="glyphicon glyphicon-user"  aria-hidden="true" ></span>
+<input type="text" name="name" placeholder="NAME" class="blank" required>
+</label>
+
+<label><span class="glyphicon glyphicon-envelope"  aria-hidden="true"></span>
+<input type="email" name="emailid" placeholder="EMAIL-ID" class="blank" id="emailid" required onChange="process(this.value);"><span id="input"></span>
+</label>
+
+<label><span class="glyphicon glyphicon-lock"  aria-hidden="true"></span>
+<input type="password" name="pwd" placeholder="PASSWORD" class="blank" required>
+</label>
+
+<label>
+<span>DOB:</span>
+<input type="date" name="date" class="blank" >
+</label>
+<label>
+<span class="glyphicon glyphicon-home"  aria-hidden="true"></span>
+<select name="city" class="blank">
+<option value="1">Delhi</option>
+<option value="2">Bombay</option>
+<option value="3">Banglore</option>
+<option value="4">Chennai</option>
+</select>
+</label>
+<label>
+<span class="glyphicon glyphicon-flag"  aria-hidden="true"></span>
+<select name="country" class="blank">
+<option value="1">India</option>
+<option value="2">Indonesia</option>
+<option value="3">Pakistan</option>
+<option value="4">England</option>
+</select>
+</label>
+<label>
+<input type="radio" name="gender" value="male"><font color="#F8F8F8" size="+3"> M</font>
+&nbsp;&nbsp;
+
+<input type="radio" name="gender" value="female"><font color="#F8F8F8" size="+3"> F</font>
+</label>
+
+<input type="submit" name="submit" value="Submit" class="button">
+<input type="reset" name="reset" value="Reset" class="button1">
+</div>
+
+</form>
+</div>
+</div>
+</body>
+</html>
